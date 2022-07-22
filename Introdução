@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Atividade Curso - JavaScript </title>
+        <meta charset="utf-8"/>
+
+<script type="text/JavaScript">;
+
+//1) Faça um Programa que mostre a mensagem "Alo mundo" na tela.
+    
+alert("Alô, Mundo!");
+
+//2) Faça um Programa que peça um número e então mostre a mensagem "O número informado foi [número]"
+
+var n1= prompt("Digite um número:")
+alert("O número informado foi "+n1+".") 
+
+//3) Faça um Programa que peça dois números e imprima a soma.
+
+   var num1= prompt("Digite o primeiro número:")
+   var num2= prompt("Digite o segundo número:")
+   let res= parseInt(num1) + parseInt(num2) 
+   document.write(res)
+
+   //4) Faça um Programa que peça as 4 notas bimestrais e mostre a média.
+
+alert("Suponha suas últimas notas bimestrais no próximo passo:")
+   var numone=prompt("digite sua Bimestral 1.")
+   var numtwo=prompt("digite sua Bimestral 2.")
+   var numthree=prompt("digite sua Bimestral 3.")
+   var numfour=prompt("digite sua Bimestral 4.")
+   let soma= parseInt(numone) + parseInt(numtwo) + parseInt(numthree) + parseInt(numfour)
+   let div= soma/4
+   alert("Sua média é "+div+".")
+
+  //5) Faça um Programa que peça um número e então mostre o antecessor e o sucessor deste.
+
+alert("Você verá o sucessor/antecessor de um número.")
+  var Nm=prompt("digite o número que deseja.")
+  let sucessor= Number(Nm) + Number(1)
+  alert("Este é seu sucessor: "+sucessor+".")
+  let antecessor= Number(Nm-1)
+  alert("Este é seu antecessor: "+antecessor+".")
+
+  //6) Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês.
+  // Calcule e mostre o total do seu salário no referido mês.
+
+  var gh=prompt("Quanto você ganha por hora?")
+  var hd=prompt("Quantas horas você trabalha por dia?")
+  let hm= Number(hd*30)
+  let gm= Number(gh*hm)
+  alert("Seu salário é de "+gm+"!")
+
+//7) Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de 
+//Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
+ 
+var ad=prompt("Qual o tamanho do arquivo em MB que desejar fazer o download?")
+  var vl=prompt("Qual a velocidade em Mbps da sua internet?")
+  let ad1= Number(ad*8)
+  let veldowns= Number(ad1/vl)
+  let veldownm= Number (veldowns*60)
+  alert("Seu arquivo baixará em "+veldownm+" minutos!")
+
+  //8) Faça um programa que peça um nome e mostre a mensagem "Boa noite [nome]"
+
+var fn= prompt("Por último, qual o seu nome?")
+   alert("Boa Noite, "+fn+"!")
+
+</script>
+</head>
+
+</html>
